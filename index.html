@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header-title">My portfolio</h1>
+        </header>
+
+        <section class="hero">
+            <div class="content">
+                <h2>Innovative Digital Solutions</h2>
+                <p style="margin: 1.5rem 0; line-height: 1.6;">
+                    Creating immersive digital experiences that blend cutting-edge technology 
+                    with artistic vision. Specializing in web development, 3D animation, 
+                    and interactive design.
+                </p>
+                <button class="neon-button" onclick="scrollToProjects()">Explore Projects →</button>
+
+            </div>
+
+            <div class="profile-card">
+                <img src="profile.png" alt="Profile">
+
+            </div>
+        </section>
+
+        <div class="projects">
+            <div class="project-card" onclick="window.open('hhttp://127.0.0.1:5500/index.html', 'http://127.0.0.1:5500/index.html')">
+                <h3>Portfolio website</h3>
+                <p>creating my own portfolio website</p>
+            </div>
+            <div class="project-card" onclick="window.open('https://github.com/dheerajdj5/Quiz-', '_blank')">
+                <h3>Simple quiz website</h3>
+                <p>created a quiz webiste </p>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function scrollToProjects() {
+            document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+</body>
+</html>
